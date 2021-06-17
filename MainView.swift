@@ -23,9 +23,13 @@ struct MainView: View {
                 }
             }
             Spacer()
-            GradientRec(width: 250, height: 250)
-                .offset(x: showAward ? 0 : -UIScreen.main.bounds.width)
+            if showAward {
+                GradientRec(width: 250, height: 250)
+                    .transition(transition)
+            }
+//                .offset(x: showAward ? 0 : -UIScreen.main.bounds.width)
 //                .animation(Animation.spring())
+            
             Spacer()
         }
         .font(.headline)
@@ -36,6 +40,18 @@ struct MainView: View {
         withAnimation {
             showAward.toggle()
         }
+    }
+}
+
+extension MainView {
+    var transition: AnyTransition {
+        let insertion = AnyTransition.move(edge: .leading)
+            .combined(with: .scale)
+        
+        let removal = AnyTransition.scale
+            .combined(with: .opacity)
+        
+        return .asymmetric(insertion: insertion, removal: removal)
     }
 }
 
