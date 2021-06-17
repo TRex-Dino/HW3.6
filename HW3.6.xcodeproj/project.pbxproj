@@ -15,6 +15,7 @@
 		0A0E3E6E267BC36000EA662A /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E3E6D267BC36000EA662A /* AwardsView.swift */; };
 		0A0E3E70267BC49800EA662A /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E3E6F267BC49800EA662A /* PathView.swift */; };
 		0A0E3E72267BC94800EA662A /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E3E71267BC94800EA662A /* CurvesView.swift */; };
+		0A0E3E74267BCD5200EA662A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E3E73267BCD5200EA662A /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0A0E3E6D267BC36000EA662A /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		0A0E3E6F267BC49800EA662A /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		0A0E3E71267BC94800EA662A /* CurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
+		0A0E3E73267BCD5200EA662A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		0A0E3E50267BC00200EA662A = {
 			isa = PBXGroup;
 			children = (
+				0A0E3E73267BCD5200EA662A /* MainView.swift */,
 				0A0E3E6B267BC0D600EA662A /* GradientRec.swift */,
 				0A0E3E6F267BC49800EA662A /* PathView.swift */,
 				0A0E3E6D267BC36000EA662A /* AwardsView.swift */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0E3E72267BC94800EA662A /* CurvesView.swift in Sources */,
+				0A0E3E74267BCD5200EA662A /* MainView.swift in Sources */,
 				0A0E3E70267BC49800EA662A /* PathView.swift in Sources */,
 				0A0E3E6E267BC36000EA662A /* AwardsView.swift in Sources */,
 				0A0E3E5F267BC00200EA662A /* ContentView.swift in Sources */,
