@@ -26,12 +26,12 @@ struct MainView: View {
             GradientRec(width: 250, height: 250)
                 .offset(x: showAward ? 0 : -UIScreen.main.bounds.width)
                 .animation(
-                    .interpolatingSpring(
-                        mass: 1,
-                        stiffness: 100,
-                        damping: 10,
-                        initialVelocity: 0
+                    .spring(
+                        response: 0.55,
+                        dampingFraction: 0.45,
+                        blendDuration: 0
                     )
+                
                 )
             Spacer()
         }
