@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A09D853267C71EA0086CF9D /* RabbitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A09D852267C71EA0086CF9D /* RabbitView.swift */; };
 		0A0E3E5D267BC00200EA662A /* HW3_6App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E3E5C267BC00200EA662A /* HW3_6App.swift */; };
 		0A0E3E5F267BC00200EA662A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E3E5E267BC00200EA662A /* ContentView.swift */; };
 		0A0E3E61267BC00300EA662A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E3E60267BC00300EA662A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A09D852267C71EA0086CF9D /* RabbitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabbitView.swift; sourceTree = "<group>"; };
 		0A0E3E59267BC00200EA662A /* HW3.6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW3.6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0E3E5C267BC00200EA662A /* HW3_6App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW3_6App.swift; sourceTree = "<group>"; };
 		0A0E3E5E267BC00200EA662A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,11 +48,6 @@
 		0A0E3E50267BC00200EA662A = {
 			isa = PBXGroup;
 			children = (
-				0A0E3E73267BCD5200EA662A /* MainView.swift */,
-				0A0E3E6B267BC0D600EA662A /* GradientRec.swift */,
-				0A0E3E6F267BC49800EA662A /* PathView.swift */,
-				0A0E3E6D267BC36000EA662A /* AwardsView.swift */,
-				0A0E3E71267BC94800EA662A /* CurvesView.swift */,
 				0A0E3E5B267BC00200EA662A /* HW3.6 */,
 				0A0E3E5A267BC00200EA662A /* Products */,
 			);
@@ -67,6 +64,12 @@
 		0A0E3E5B267BC00200EA662A /* HW3.6 */ = {
 			isa = PBXGroup;
 			children = (
+				0A0E3E73267BCD5200EA662A /* MainView.swift */,
+				0A0E3E6B267BC0D600EA662A /* GradientRec.swift */,
+				0A09D852267C71EA0086CF9D /* RabbitView.swift */,
+				0A0E3E6F267BC49800EA662A /* PathView.swift */,
+				0A0E3E6D267BC36000EA662A /* AwardsView.swift */,
+				0A0E3E71267BC94800EA662A /* CurvesView.swift */,
 				0A0E3E5C267BC00200EA662A /* HW3_6App.swift */,
 				0A0E3E5E267BC00200EA662A /* ContentView.swift */,
 				0A0E3E60267BC00300EA662A /* Assets.xcassets */,
@@ -155,6 +158,7 @@
 			files = (
 				0A0E3E72267BC94800EA662A /* CurvesView.swift in Sources */,
 				0A0E3E74267BCD5200EA662A /* MainView.swift in Sources */,
+				0A09D853267C71EA0086CF9D /* RabbitView.swift in Sources */,
 				0A0E3E70267BC49800EA662A /* PathView.swift in Sources */,
 				0A0E3E6E267BC36000EA662A /* AwardsView.swift in Sources */,
 				0A0E3E5F267BC00200EA662A /* ContentView.swift in Sources */,

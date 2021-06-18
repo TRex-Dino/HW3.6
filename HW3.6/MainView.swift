@@ -19,17 +19,14 @@ struct MainView: View {
                     Image(systemName: "chevron.up.square")
                         .scaleEffect(showAward ? 2 : 1)
                         .rotationEffect(.degrees(showAward ? 0 : 180))
-//                        .animation(.default)
-                    
                 }
             }
             Spacer()
+            
             if showAward {
-                GradientRec(width: 250, height: 250)
+                RabbitView(width: 200, height: 200)
                     .transition(.transition)
             }
-//                .offset(x: showAward ? 0 : -UIScreen.main.bounds.width)
-//                .animation(Animation.spring())
             
             Spacer()
         }
@@ -49,8 +46,8 @@ extension AnyTransition {
         let insertion = AnyTransition.move(edge: .leading)
             .combined(with: .scale)
         
-        let removal = AnyTransition.scale
-            .combined(with: .opacity)
+        let removal = AnyTransition.move(edge: .trailing)
+            .combined(with: .slide)
         
         return .asymmetric(insertion: insertion, removal: removal)
     }
