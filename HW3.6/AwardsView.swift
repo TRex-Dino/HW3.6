@@ -10,13 +10,14 @@ import SwiftUI
 struct AwardsView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                ScrollView {
+            ScrollView {
+                VStack {
                     GradientRec(width: 250, height: 250)
                     PathView(width: 250, height: 250)
                     CurvesView(width: 250, height: 250)
                     RabbitView(width: 200, height: 200)
                 }
+                .frame(maxWidth: .infinity)
             }
             .navigationBarTitle("Awards")
         }
