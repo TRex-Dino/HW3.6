@@ -37,7 +37,6 @@ struct CurvesView: View {
                     endRadius: geo.size.width * 0.6
                 )
             )
-            
             Path { path in
                 path.addArc(
                     center: CGPoint(x: nearLine, y: nearLine),

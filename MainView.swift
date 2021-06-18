@@ -17,6 +17,7 @@ struct MainView: View {
                     Text(showAward ? "Hide Award": "Show Award")
                     Spacer()
                     Image(systemName: "chevron.up.square")
+                        .scaleEffect(showAward ? 2 : 1)
                         .rotationEffect(.degrees(showAward ? 0 : 180))
 //                        .animation(.default)
                     
@@ -25,7 +26,7 @@ struct MainView: View {
             Spacer()
             if showAward {
                 GradientRec(width: 250, height: 250)
-                    .transition(transition)
+                    .transition(.transition)
             }
 //                .offset(x: showAward ? 0 : -UIScreen.main.bounds.width)
 //                .animation(Animation.spring())
@@ -43,8 +44,8 @@ struct MainView: View {
     }
 }
 
-extension MainView {
-    var transition: AnyTransition {
+extension AnyTransition {
+    static var transition: AnyTransition {
         let insertion = AnyTransition.move(edge: .leading)
             .combined(with: .scale)
         
